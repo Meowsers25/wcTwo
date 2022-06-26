@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <title>Web Components</title>
+    <script src="userCard/index.js" defer></script>
+    <script src="modal/index.js" defer></script>
+    <link rel="stylesheet" href="global.css" />
+  </head>
+  <script>
+    const loadData = async () => {
+      await fetch(`./art-info.json`)
+        .then((response) => response.json())
+        .then((response) => {
+          response.forEach((user, index) => {
+            const nodeToBeInserted = document.createElement("user-card");
+            nodeToBeInserted.setAttribute("name", user.name);
+            nodeToBeInserted.setAttribute("avatar", user.image);
+            nodeToBeInserted.setAttribute("age", user.age);
+            nodeToBeInserted.setAttribute("key", user.id);
+            document
+              .getElementById("details")
+              .insertAdjacentElement("beforeend", nodeToBeInserted);
+          });
+        });
+      };
+  loadData()
+    
+  </script>
+  <body>
+    <h1 class="text-center">Web Components Demo</h1>
+    <div id="details"></div>
+  </body>
+</html>
