@@ -5,7 +5,7 @@
         "age": 50,
         "coder": true,
         "pets": ["Luna", "B", "Sully"],
-        "img": "./images/wizard.png"
+        "img": "/images/wizard.png"
     },
     {
         "id": 2,
@@ -13,7 +13,7 @@
         "age": 38,
         "coder": false,
         "pets": ["Luna", "B", "Sully"],
-        "img": "./images/monk.png"
+        "img": "/images/monk.png"
     },
     {
         "id": 3,
@@ -21,7 +21,7 @@
         "age": 9,
         "coder": false,
         "pets": ["Luna", "B", "Sully"],
-        "img": "./images/paladin.png"
+        "img": "/images/paladin.png"
     },
     {
         "id": 4,
@@ -29,6 +29,6 @@
         "age": 6,
         "coder": false,
         "pets": ["Luna", "B", "Sully"],
-        "img": "./images/ranger.png"
+        "img": "/images/ranger.png"
     }
 ]

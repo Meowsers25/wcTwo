@@ -31,7 +31,7 @@ class Modal extends HTMLElement {
   attributeChangedCallback(name, oldValue, newValue) {
     if(name==='key'){
       this.shadowRoot.querySelector('h3').innerText = this.getAttribute('name');
-      this.shadowRoot.querySelector('img').src = this.getAttribute('avatar');
+      this.shadowRoot.querySelector('img').src = this.getAttribute("avatar");
       this.shadowRoot.querySelector('p').innerHTML = `
       Age: ${this.getAttribute('age')}
       
